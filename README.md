@@ -5,7 +5,7 @@ Você pode acessar o projeto no link disponivel nesse mesmo repositório, da uma
 
 ![image](https://user-images.githubusercontent.com/90655096/191069676-0d852d95-e872-4689-8749-e8152cfc76c7.png)
 
-##Tecnologias Utilizadas no Projeto
+## Tecnologias Utilizadas no Projeto
 
 - HTML
 - CSS
