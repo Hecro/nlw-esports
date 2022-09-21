@@ -47,12 +47,9 @@ header div {
     width: 120px;
     margin: auto;
     background-image: linear-gradient(90deg, var(--gradient-primary) 0%, var(--gradient-secondary) 50.52%, var(--gradient-tertiary) 100%);
-
     border-radius: 50%;
-
     display: flex;
     padding: 4px;
-
     transition: transform .3s;
 }
 
@@ -68,10 +65,9 @@ header div img {
 /* Main presets */
 
 main {
-    max-width: 580px;
+    max-width: 360px;
     width: 90%;
     margin: 32px auto;
-
     display: grid;
     gap: 24px;
 }
@@ -171,4 +167,24 @@ main section:nth-child(3) {
         opacity: 1;
         transform: translateY(0)
     }
+}
+
+/* Swiper Slider */
+
+section h2 {
+    font-size: 20px;
+}
+
+section p {
+    font-size: 14px;
+}
+
+section {
+    width: 360px;
+    overflow: hidden;
+}
+
+section ul {
+    flex-wrap: nowrap;
+    gap: 0;
 }
