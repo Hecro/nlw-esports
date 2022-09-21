@@ -10,6 +10,7 @@ Você pode acessar o projeto no link disponivel nesse mesmo repositório, da uma
 - HTML
 - CSS
 - GIT e Github
+- Swiper
 
 ## Entre em contato comigo 💜
 lucas.freitasj.ca@gmail.com
