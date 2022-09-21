@@ -8,6 +8,11 @@
         <title>NLW | eSports</title>
         <link rel="stylesheet" href="./style.css">
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+        />
+        <link rel="shortcut icon" href="https://global-uploads.webflow.com/61d83a2ebb0ae01ab96e841a/630ced17a99fbd99b6169b52_Logo-NLW-eSports.svg">
     </head>
     <body>
         <header>
@@ -20,28 +25,39 @@
                 <div>
                     <h2>Meus jogos</h2>
                     <p>Jogados recentemente</p>
-                    <ul class="games-list">
-                        <li>
+                    <div class="swiper mySwiper">
+                    <ul class="games-list swiper-wrapper">
+                        <li class="swiper-slide">
                             <a href="https://www.twitch.tv/directory/game/Fall%20Guys" target="_blank">
                                 <img src="https://static-cdn.jtvnw.net/ttv-boxart/512980-285x380.jpg" alt="banner do Fall Guys">
                             </a>
                         </li>
-                        <li>
+                        
+                        <li class="swiper-slide">
                             <a href="https://www.twitch.tv/directory/game/Stardew%20Valley" target="_blank">
                                 <img src="https://static-cdn.jtvnw.net/ttv-boxart/490744_IGDB-285x380.jpg" alt="banner do Stardew Valley">
                             </a>
                         </li>
-                        <li>
+
+                        <li class="swiper-slide">
                             <a href="https://www.twitch.tv/directory/game/Brawlhalla" target="_blank">
                                 <img src="https://static-cdn.jtvnw.net/ttv-boxart/460316_IGDB-285x380.jpg" alt="banner do Brawlhalla">
                             </a>
                         </li>
-                        <li>
+
+                        <li class="swiper-slide">
                             <a href="https://www.twitch.tv/directory/game/Outer%20Wilds" target="_blank">
                                 <img src="https://static-cdn.jtvnw.net/ttv-boxart/489335_IGDB-285x380.jpg" alt="banner do Outer Wilds">
                             </a>
                         </li>
+
+                        <li class="swiper-slide">
+                            <a href="https://www.twitch.tv/directory/game/Minecraft" target="_blank">
+                                <img src="https://static-cdn.jtvnw.net/ttv-boxart/27471_IGDB-285x380.jpg" alt="banner do Outer Wilds">
+                            </a>
+                        </li>
                     </ul>
+                    </div>
                 </div>
             </section>
 
@@ -49,28 +65,45 @@
                 <div>
                     <h2>Meus streamers favoritos</h2>
                     <p>Luquitas recomenda esses streamers</p>
-                    <ul class="streamer-list">
-                        <li>
+                    <div class="swiper mySwiper">
+                    <ul class="streamer-list swiper-wrapper">
+                        <li class="swiper-slide">
                             <a href="https://www.twitch.tv/alanzoka" target="_blank">
                                 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/15cec952-c1ba-4ff8-a79c-53c2fa5bd269-profile_image-150x150.png" alt="icon da Twitch do Alanzoka">
                             </a>
                         </li>
-                        <li>
+
+                        <li class="swiper-slide">
+                            <a href="https://www.twitch.tv/maethe" target="_blank">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/4c8846c2-2fad-4276-8004-070700d316aa-profile_image-150x150.png" alt="icon da Twitch da Maethe">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
+                            <a href="https://www.twitch.tv/g0ularte" target="_blank">
+                                <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/016626ec-56e6-40e1-9278-60e60508e099-profile_image-150x150.png" alt="icon da Twitch do Goularte">
+                            </a>
+                        </li>
+
+                        <li class="swiper-slide">
                             <a href="https://www.twitch.tv/cellbit" target="_blank">
                                 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/cb885149-f7f7-48f0-99ae-fe0a386ed3e2-profile_image-150x150.png" alt="icon da Twitch do Cellbit">
                             </a>
                         </li>
-                        <li>
+
+                        <li class="swiper-slide">
                             <a href="https://www.twitch.tv/alexisdino" target="_blank">
                                 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/8700499e-e8c6-49cd-b0eb-babee01e4872-profile_image-150x150.png" alt="icon da Twitch do AlexisDino">
                             </a>
                         </li>
-                        <li>
+
+                        <li class="swiper-slide">
                             <a href="https://www.twitch.tv/casimito" target="_blank">
                                 <img src="https://static-cdn.jtvnw.net/jtv_user_pictures/32805a78-d927-48bd-8089-bf5efed53ea4-profile_image-150x150.png" alt="icon da Twitch do Casimiro">
                             </a>
                         </li>
                     </ul>
+                    </div>
                 </div>
             </section>
 
@@ -112,5 +145,17 @@
                 </div>
             </section>
         </main>
+        <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+            <script>
+                new Swiper(".mySwiper", {
+                slidesPerView: 3,
+                pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                loop: true,
+                },
+            });
+          </script>
     </body>
 </html>
